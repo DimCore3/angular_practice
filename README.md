@@ -7,7 +7,5 @@ If you want to start it, you need use npm commands:
    
 npm install -g @angular/cli
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-ng new my-app
-cd my-app
-ng serve --open
+cd ./test-task
 npm run start
