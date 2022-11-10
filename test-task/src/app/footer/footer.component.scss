@@ -1,0 +1,20 @@
+.footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 4px;
+    right: 0.5rem;
+    left: 0.5rem;
+    background-color: rgb(139, 173, 187);
+    height: 3rem;
+
+    a {
+        text-decoration-line: none;
+        color:rgb(83, 28, 134);
+    }
+
+    p {
+        align-self: center;
+        float: right;
+    }
+}

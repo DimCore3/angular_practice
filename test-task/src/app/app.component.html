@@ -1,0 +1,41 @@
+<div class="container">
+  <header>
+    ТЕКСТ ХЭДЭРА
+  </header>
+
+  <div class="mainContent">
+      <div class="received-objects">
+        <app-data-received
+          *ngFor="let jsonObj of arrayWithObj; let idx = index"
+          [jsonElement] = "jsonObj"
+          [idx] = 'idx + 1'
+        >
+        </app-data-received>
+      </div>
+
+
+    <div class="middle-content">
+      <h1>Hello</h1>
+      <app-card></app-card>
+      <app-card></app-card>
+      <app-card></app-card>
+      <app-card></app-card>
+      <app-card></app-card>
+      <app-card></app-card>
+    </div>
+
+    <div class="right-content">
+      <div class="navigation">
+        <button 
+          (click)="hideMenu()"
+          class="menuHidder"
+        > 
+          {{menuHidden === true ? 'Скрыть' : 'Показать'}} меню 
+        </button>
+        <app-navigation-bar *ngIf="menuHidden"></app-navigation-bar>
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</div>

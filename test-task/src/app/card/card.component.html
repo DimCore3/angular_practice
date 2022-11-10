@@ -1,0 +1,32 @@
+<div class="card">
+    <h2 [ngStyle]="{
+        color: title.length < 5 ? 'black' : 'green',
+        fontWeight: title.length < 7 ? 'normal' : 'bold'
+    }"> 
+        {{title}} 
+    </h2>
+
+    <p>
+        {{content}} 
+        <br>
+        Задать цвет текста
+        <button (click)="changeTextColor(color)" *ngFor="let color of colorList"> {{color}}</button>
+    </p>
+
+    <p class="text" [ngClass]="textColor">{{content}}</p>
+
+    <div class="buttons">
+        <button (click)="changeTitle()">Change title</button>
+        <button (click)="title = 'Inline Title another change'">Inline change</button>
+    </div>
+
+    <div class="inputContainer">
+        <input type="text" [(ngModel)]="title" (ngModelChange)="changeHandler()">
+    </div>
+
+    <div>
+        <strong>
+            {{cardDate | date:'dd.MMMM.yyyy HH:mm:ss'}}
+        </strong>
+    </div>
+</div>

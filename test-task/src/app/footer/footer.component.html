@@ -1,0 +1,8 @@
+<div class="footer">
+    <div class="socialMediaLink" *ngFor="let mediaObject of socialMedia">
+        <a [href]="mediaObject.link">
+            {{mediaObject.name}}
+        </a>
+    </div>
+    <p>footer works!</p>
+</div>

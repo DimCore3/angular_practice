@@ -1,0 +1,24 @@
+.navigation-bar {
+    background-color: aquamarine;
+    height: 36rem;
+    min-width: 10rem;
+
+    .header-navigation, footer {
+        height: 2rem;
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+.navigation-bar, .navigationMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navigationMenu {
+    height: 60%;
+}
